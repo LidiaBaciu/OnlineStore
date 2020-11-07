@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
     <Header />
-    <h1> Hiii Lidia, I am glad to hear it:) </h1>
+    <h1> Hi Lidia, glad to hear it! :) </h1>
     <Footer />
     </>
 
