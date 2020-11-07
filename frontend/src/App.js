@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
     <Header />
-    <h1> Hiii Alex, I just contributed the first time on an open source project :) </h1>
+    <h1> Hi Lidia, glad to hear it! :) </h1>
     <Footer />
     </>
 
