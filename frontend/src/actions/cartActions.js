@@ -33,14 +33,14 @@ export const saveShippingAddress = (data) => async (dispatch) => {
         payload: data,
     })
 
-    localStorage.setItem('shippingAddress', JSON.stringify(JSON.stringify(data)))
+    localStorage.setItem('shippingAddress', JSON.stringify(data))
 }
 
-export const savePaymentMethod = (paymentMethod) => async (dispatch) => {
+export const savePaymentMethod = (data) => async (dispatch) => {
     dispatch({
         type: CART_SAVE_PAYMENT_METHOD,
-        payload: paymentMethod,
+        payload: data,
     })
 
-    localStorage.setItem('paymentMethod', JSON.stringify(JSON.stringify(paymentMethod)))
+    localStorage.setItem('paymentMethod', JSON.stringify(data))
 }
