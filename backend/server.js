@@ -9,6 +9,7 @@ import orderRoutes from './routes/orderRoutes.js'
 import Product from './models/productModel.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
+import morgan from 'morgan'
 
 dotenv.config({ override: true })
 
@@ -17,6 +18,9 @@ connectDB()
 const { NODE_ENV } = process.env
 
 const app = express()
+if (process.env.NODE_ENV === 'development') {
+	app.use(morgan('dev'))
+}
 
 //accept json data in the body
 app.use(express.json())
